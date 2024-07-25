@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <report
+        id="legis_technical_incident_report_option"
+        string="Technical incident report"
+        model="legis.technical.incident"
+        report_type="qweb-pdf"
+        name="safety_legislation.legis_technical_incident_report"
+        file="safety_legislation.legis_technical_incident_report"
+    />
+
+    <report
+        id="legis_marine_protest_report_option"
+        string="Marine protest report"
+        model="legis.technical.incident"
+        report_type="qweb-pdf"
+        name="safety_legislation.legis_marine_protest_report"
+        file="safety_legislation.legis_marine_protest_report"
+    />
+
+    <report
+        id="legis_job_report_report_option"
+        string="Job report"
+        model="legis.technical.incident"
+        report_type="xlsx"
+        name="safety_legislation.legis_job_report_report"
+        file="safety_legislation.legis_job_report_report"
+    />
+
+</odoo>

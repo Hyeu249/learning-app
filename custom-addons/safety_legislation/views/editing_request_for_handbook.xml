@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_legis_editing_request_for_handbook_form" model="ir.ui.view">
+        <field name="name">legis.editing.request.for.handbook.form</field>
+        <field name="model">legis.editing.request.for.handbook</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button name="get_changed_content_of_handbook"
+                        string="Get changed content of handbook"
+                        type="object"
+                        class="oe_highlight"
+                    />
+                    <button name="create_new_handbook_based_on_request"
+                        string="Create new handbook"
+                        type="object"
+                        class="oe_highlight"
+                        confirm="Bạn có chắc chắn muốn tạo mới handbook?"
+                    />
+                    <button name="action_unpropose"
+                        string="action_unpropose"
+                        type="object"
+                        class="oe_highlight btn-danger"
+                    />
+                    <button name="action_propose"
+                        string="action_propose"
+                        type="object"
+                        class="oe_highlight btn-success"
+                        attrs="{'invisible': [('is_in_proposal_process', '=', False)]}"
+                    />
+                    <button name="action_reject"
+                        string="action_reject"
+                        type="object"
+                        class="oe_highlight btn-danger"
+                        attrs="{'invisible': [('is_in_proposal_process', '=', True)]}"
+                    />
+                    <button name="action_approve"
+                        string="action_approve"
+                        type="object"
+                        class="oe_highlight btn-success"
+                        attrs="{'invisible': ['|', ('is_in_proposal_process', '=', True), ('approval_status', '=', 'APPROVED')]}"
+                    />
+                </header>
+                <header>
+                    <field name="approval_status" widget="statusbar" options="{'clickable': '1', 'fold_field': 'fold'}" readonly="1"/>
+                    <field name="is_in_proposal_process" invisible="1"/>
+                </header>
+                <sheet>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="ref" readonly="1"/>
+                        </h1>
+                    </div>
+
+                    <group>
+                        <field name="company_id" readonly="1"/>
+                        <field name="safety_management_handbook_id"/>
+                        <field name="request_date"/>
+                        <field name="is_hide_content_old_new_diff"/>
+                    </group>
+
+                    <notebook>
+                        <page string="Changed Content Of handbooks" name="changed_content_of_handbook_ids">
+                            <field name="changed_content_of_handbook_ids"/>
+                        </page>
+                    </notebook>
+
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids"/>
+                        <field name="message_ids" options="{'post_refresh': 'recipients'}"/>
+                    </div>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_legis_editing_request_for_handbook_tree" model="ir.ui.view">
+        <field name="name">legis.editing.request.for.handbook.tree</field>
+        <field name="model">legis.editing.request.for.handbook</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="ref"/>
+                <field name="request_date"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_legis_editing_request_for_handbook_search" model="ir.ui.view">
+        <field name="name">legis.editing.request.for.handbook.search</field>
+        <field name="model">legis.editing.request.for.handbook</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="ref"/>
+                <field name="request_date"/>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_legis_editing_request_for_handbook" model="ir.actions.act_window">
+        <field name="name">Editing Request For Handbook</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">legis.editing.request.for.handbook</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="menu_legis_editing_request_for_handbook"
+            name="Editing Request For Handbook" 
+            parent="menu_legis_edit_request"
+            action="action_legis_editing_request_for_handbook"
+            sequence="10"/>
+
+</odoo>

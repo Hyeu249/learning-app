@@ -1,0 +1,591 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* utilities
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0-20230720\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-12 00:59+0000\n"
+"PO-Revision-Date: 2024-01-12 00:59+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: utilities
+#: model:ir.model.fields,field_description:utilities.field_utilities_approval_flow__message_needaction
+#: model:ir.model.fields,field_description:utilities.field_utilities_approval_level__message_needaction
+#: model:ir.model.fields,field_description:utilities.field_utilities_approval_status__message_needaction
+#: model:ir.model.fields,field_description:utilities.field_utilities_default_value__message_needaction
+#: model:ir.model.fields,field_description:utilities.field_utilities_notification__message_needaction
+msgid "Action Needed"
+msgstr "Hành động cần thiết"
+
+#. module: utilities
+#: model:res.groups,name:utilities.group_ship_admin
+msgid "Admin"
+msgstr ""
+
+#. module: utilities
+#: model:ir.model.fields,field_description:utilities.field_utilities_approval_level_ordering__approval_level_id
+msgid "Approval Level"
+msgstr "Tầng duyệt"
+
+#. module: utilities
+#: model:ir.actions.act_window,name:utilities.action_utilities_approval_flow
+#: model:ir.model.fields,field_description:utilities.field_utilities_approval_level_ordering__approval_flow_id
+#: model:ir.model.fields,field_description:utilities.field_utilities_approval_status__approval_flow_id
+#: model:ir.ui.menu,name:utilities.menu_utilities_approval_flow
+msgid "Approval flow"
+msgstr "Luồng duyệt"
+
+#. module: utilities
+#: model:ir.model,name:utilities.model_utilities_approval_flow
+msgid "Approval flow records"
+msgstr ""
+
+#. module: utilities
+#: model:ir.model.fields,field_description:utilities.field_utilities_approval_flow__approval_flow_type
+msgid "Approval flow type"
+msgstr "Loại luồng duyệt"
+
+#. module: utilities
+#: model:ir.actions.act_window,name:utilities.action_utilities_approval_level
+#: model:ir.ui.menu,name:utilities.menu_utilities_approval_level
+msgid "Approval level"
+msgstr "Tầng duyệt"
+
+#. module: utilities
+#: model:ir.model,name:utilities.model_utilities_approval_level_ordering
+msgid "Approval level ordering records"
+msgstr ""
+
+#. module: utilities
+#: model:ir.model,name:utilities.model_utilities_approval_level
+msgid "Approval level records"
+msgstr ""
+
+#. module: utilities
+#: model:ir.model.fields,field_description:utilities.field_utilities_approval_flow__approval_level_ids
+msgid "Approval levels"
+msgstr "Tầng duyệt"
+
+#. module: utilities
+#: model:ir.model.fields,field_description:utilities.field_utilities_approval_status__approval_status
+msgid "Approval status"
+msgstr "Trạng thái duyệt"
+
+#. module: utilities
+#: model:ir.model,name:utilities.model_utilities_approval_status
+msgid "Approval status records"
+msgstr ""
+
+#. module: utilities
+#: model:ir.model.fields.selection,name:utilities.selection__ship_proposed_liquidation__approval_status__approved
+#: model:ir.model.fields.selection,name:utilities.selection__utilities_approval_status__approval_status__approved
+msgid "Approved"
+msgstr "Đã chấp thuận"
+
+#. module: utilities
+#: model:ir.model.fields,field_description:utilities.field_utilities_approval_flow__message_attachment_count
+#: model:ir.model.fields,field_description:utilities.field_utilities_approval_level__message_attachment_count
+#: model:ir.model.fields,field_description:utilities.field_utilities_approval_status__message_attachment_count
+#: model:ir.model.fields,field_description:utilities.field_utilities_default_value__message_attachment_count
+#: model:ir.model.fields,field_description:utilities.field_utilities_notification__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: utilities
+#: model_terms:ir.ui.view,arch_db:utilities.view_utilities_default_value_form
+msgid "Base Data"
+msgstr ""
+
+#. module: utilities
+#: model:res.groups,name:utilities.group_ship_ceo
+msgid "CEO"
+msgstr ""
+
+#. module: utilities
+#: model:res.groups,name:utilities.group_ship_captain
+msgid "Captain"
+msgstr "Thuyền trưởng"
+
+#. module: utilities
+#: model:ir.module.category,description:utilities.module_category_ship
+msgid "Category For Ship"
+msgstr ""
+
+#. module: utilities
+#: model:ir.model.fields,field_description:utilities.field_utilities_default_value__char_value
+msgid "Char value"
+msgstr "Chữ(Ký tự)"
+
+#. module: utilities
+#: model:ir.model.fields,field_description:utilities.field_utilities_default_value__ref
+msgid "Code"
+msgstr ""
+
+#. module: utilities
+#: model:ir.model.fields.selection,name:utilities.selection__utilities_approval_flow__approval_flow_type__contract-flow
+msgid "Contract approval flow"
+msgstr "Luồng duyệt hợp đồng"
+
+#. module: utilities
+#: model:ir.model.fields,field_description:utilities.field_utilities_approval_flow__create_uid
+#: model:ir.model.fields,field_description:utilities.field_utilities_approval_level__create_uid
+#: model:ir.model.fields,field_description:utilities.field_utilities_approval_level_ordering__create_uid
+#: model:ir.model.fields,field_description:utilities.field_utilities_approval_status__create_uid
+#: model:ir.model.fields,field_description:utilities.field_utilities_default_value__create_uid
+#: model:ir.model.fields,field_description:utilities.field_utilities_notification__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: utilities
+#: model:ir.model.fields,field_description:utilities.field_utilities_approval_flow__create_date
+#: model:ir.model.fields,field_description:utilities.field_utilities_approval_level__create_date
+#: model:ir.model.fields,field_description:utilities.field_utilities_approval_level_ordering__create_date
+#: model:ir.model.fields,field_description:utilities.field_utilities_approval_status__create_date
+#: model:ir.model.fields,field_description:utilities.field_utilities_default_value__create_date
+#: model:ir.model.fields,field_description:utilities.field_utilities_notification__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: utilities
+#: model:ir.model.fields,field_description:utilities.field_utilities_approval_status__current_approval_level_id
+msgid "Current approval level"
+msgstr "Tầng duyệt hiện tại"
+
+#. module: utilities
+#: model:ir.model.fields,field_description:utilities.field_utilities_default_value__date_value
+msgid "Date value"
+msgstr "Ngày"
+
+#. module: utilities
+#: model:ir.actions.act_window,name:utilities.action_utilities_default_value
+#: model:ir.ui.menu,name:utilities.menu_utilities_default_value
+msgid "Default Type"
+msgstr "Loại mặc định"
+
+#. module: utilities
+#: model_terms:ir.ui.view,arch_db:utilities.view_utilities_default_value_form
+msgid "Default Values"
+msgstr ""
+
+#. module: utilities
+#: model:ir.model.fields,field_description:utilities.field_utilities_default_value__default_type
+msgid "Default type"
+msgstr "Loại mặc định"
+
+#. module: utilities
+#: model:ir.model,name:utilities.model_utilities_default_value
+msgid "Default value records"
+msgstr ""
+
+#. module: utilities
+#: model:ir.model.fields,field_description:utilities.field_utilities_approval_flow__description
+msgid "Description"
+msgstr "Mô tả"
+
+#. module: utilities
+#: model:ir.model.fields,field_description:utilities.field_utilities_approval_flow__display_name
+#: model:ir.model.fields,field_description:utilities.field_utilities_approval_level__display_name
+#: model:ir.model.fields,field_description:utilities.field_utilities_approval_level_ordering__display_name
+#: model:ir.model.fields,field_description:utilities.field_utilities_approval_status__display_name
+#: model:ir.model.fields,field_description:utilities.field_utilities_default_value__display_name
+#: model:ir.model.fields,field_description:utilities.field_utilities_notification__display_name
+msgid "Display Name"
+msgstr "Hiển thị tên"
+
+#. module: utilities
+#: model:ir.model.fields.selection,name:utilities.selection__utilities_default_value__default_type__expect_start_date
+msgid "Expected Start Date"
+msgstr "Ngày bắt đầu dự kiến"
+
+#. module: utilities
+#: model:ir.model.fields.selection,name:utilities.selection__utilities_approval_flow__approval_flow_type__expected-cost-report-approval-flow
+msgid "Expected cost report approval flow"
+msgstr "Luồng duyệt dự toán chi phí"
+
+#. module: utilities
+#: model:ir.model.fields,field_description:utilities.field_utilities_approval_flow__message_follower_ids
+#: model:ir.model.fields,field_description:utilities.field_utilities_approval_level__message_follower_ids
+#: model:ir.model.fields,field_description:utilities.field_utilities_approval_status__message_follower_ids
+#: model:ir.model.fields,field_description:utilities.field_utilities_default_value__message_follower_ids
+#: model:ir.model.fields,field_description:utilities.field_utilities_notification__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: utilities
+#: model:ir.model.fields,field_description:utilities.field_utilities_approval_flow__message_partner_ids
+#: model:ir.model.fields,field_description:utilities.field_utilities_approval_level__message_partner_ids
+#: model:ir.model.fields,field_description:utilities.field_utilities_approval_status__message_partner_ids
+#: model:ir.model.fields,field_description:utilities.field_utilities_default_value__message_partner_ids
+#: model:ir.model.fields,field_description:utilities.field_utilities_notification__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: utilities
+#: model:ir.model.fields,field_description:utilities.field_utilities_approval_flow__has_message
+#: model:ir.model.fields,field_description:utilities.field_utilities_approval_level__has_message
+#: model:ir.model.fields,field_description:utilities.field_utilities_approval_status__has_message
+#: model:ir.model.fields,field_description:utilities.field_utilities_default_value__has_message
+#: model:ir.model.fields,field_description:utilities.field_utilities_notification__has_message
+msgid "Has Message"
+msgstr ""
+
+#. module: utilities
+#: model:res.groups,name:utilities.group_ship_head_of_department
+msgid "Head of Department"
+msgstr "Trưởng kỹ thuật và trưởng pháp chế"
+
+#. module: utilities
+#: model:res.groups,name:utilities.group_ship_head_of_machinery
+msgid "Head of Machinery"
+msgstr "Trưởng kỹ thuật"
+
+#. module: utilities
+#: model:res.groups,name:utilities.group_ship_head_of_manager
+msgid "Head of Manager"
+msgstr "Trưởng phòng quản lý tàu"
+
+#. module: utilities
+#: model_terms:ir.ui.view,arch_db:utilities.view_utilities_default_value_form
+msgid "Html"
+msgstr ""
+
+#. module: utilities
+#: model:ir.model.fields.selection,name:utilities.selection__utilities_default_value__default_type__html_value
+msgid "Html Value"
+msgstr ""
+
+#. module: utilities
+#: model:ir.model.fields,field_description:utilities.field_utilities_default_value__html_value
+msgid "Html value"
+msgstr ""
+
+#. module: utilities
+#: model:ir.model.fields,field_description:utilities.field_utilities_approval_flow__id
+#: model:ir.model.fields,field_description:utilities.field_utilities_approval_level__id
+#: model:ir.model.fields,field_description:utilities.field_utilities_approval_level_ordering__id
+#: model:ir.model.fields,field_description:utilities.field_utilities_approval_status__id
+#: model:ir.model.fields,field_description:utilities.field_utilities_default_value__id
+#: model:ir.model.fields,field_description:utilities.field_utilities_notification__id
+msgid "ID"
+msgstr ""
+
+#. module: utilities
+#: model:ir.model.fields,help:utilities.field_utilities_approval_flow__message_needaction
+#: model:ir.model.fields,help:utilities.field_utilities_approval_level__message_needaction
+#: model:ir.model.fields,help:utilities.field_utilities_approval_status__message_needaction
+#: model:ir.model.fields,help:utilities.field_utilities_default_value__message_needaction
+#: model:ir.model.fields,help:utilities.field_utilities_notification__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: utilities
+#: model:ir.model.fields,help:utilities.field_utilities_approval_flow__message_has_error
+#: model:ir.model.fields,help:utilities.field_utilities_approval_level__message_has_error
+#: model:ir.model.fields,help:utilities.field_utilities_approval_status__message_has_error
+#: model:ir.model.fields,help:utilities.field_utilities_default_value__message_has_error
+#: model:ir.model.fields,help:utilities.field_utilities_notification__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: utilities
+#: model:ir.model.fields,field_description:utilities.field_utilities_default_value__int_value
+msgid "Int value"
+msgstr ""
+
+#. module: utilities
+#: model:ir.model.fields,field_description:utilities.field_utilities_approval_flow__message_is_follower
+#: model:ir.model.fields,field_description:utilities.field_utilities_approval_level__message_is_follower
+#: model:ir.model.fields,field_description:utilities.field_utilities_approval_status__message_is_follower
+#: model:ir.model.fields,field_description:utilities.field_utilities_default_value__message_is_follower
+#: model:ir.model.fields,field_description:utilities.field_utilities_notification__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: utilities
+#: model:ir.model.fields,field_description:utilities.field_utilities_approval_status__is_approve_button_hidden
+msgid "Is approve button hidden"
+msgstr ""
+
+#. module: utilities
+#: model:ir.model.fields,field_description:utilities.field_utilities_approval_status__is_propose
+msgid "Is propose"
+msgstr ""
+
+#. module: utilities
+#: model:ir.model.fields.selection,name:utilities.selection__utilities_approval_flow__approval_flow_type__job-quote-approval-flow
+msgid "Job quote approval flow"
+msgstr "Luồng duyệt báo giá công việc"
+
+#. module: utilities
+#: model:ir.model.fields,field_description:utilities.field_utilities_approval_flow____last_update
+#: model:ir.model.fields,field_description:utilities.field_utilities_approval_level____last_update
+#: model:ir.model.fields,field_description:utilities.field_utilities_approval_level_ordering____last_update
+#: model:ir.model.fields,field_description:utilities.field_utilities_approval_status____last_update
+#: model:ir.model.fields,field_description:utilities.field_utilities_default_value____last_update
+#: model:ir.model.fields,field_description:utilities.field_utilities_notification____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: utilities
+#: model:ir.model.fields,field_description:utilities.field_utilities_approval_flow__write_uid
+#: model:ir.model.fields,field_description:utilities.field_utilities_approval_level__write_uid
+#: model:ir.model.fields,field_description:utilities.field_utilities_approval_level_ordering__write_uid
+#: model:ir.model.fields,field_description:utilities.field_utilities_approval_status__write_uid
+#: model:ir.model.fields,field_description:utilities.field_utilities_default_value__write_uid
+#: model:ir.model.fields,field_description:utilities.field_utilities_notification__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: utilities
+#: model:ir.model.fields,field_description:utilities.field_utilities_approval_flow__write_date
+#: model:ir.model.fields,field_description:utilities.field_utilities_approval_level__write_date
+#: model:ir.model.fields,field_description:utilities.field_utilities_approval_level_ordering__write_date
+#: model:ir.model.fields,field_description:utilities.field_utilities_approval_status__write_date
+#: model:ir.model.fields,field_description:utilities.field_utilities_default_value__write_date
+#: model:ir.model.fields,field_description:utilities.field_utilities_notification__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: utilities
+#: model:ir.model.fields,field_description:utilities.field_utilities_approval_flow__message_main_attachment_id
+#: model:ir.model.fields,field_description:utilities.field_utilities_approval_level__message_main_attachment_id
+#: model:ir.model.fields,field_description:utilities.field_utilities_approval_status__message_main_attachment_id
+#: model:ir.model.fields,field_description:utilities.field_utilities_default_value__message_main_attachment_id
+#: model:ir.model.fields,field_description:utilities.field_utilities_notification__message_main_attachment_id
+msgid "Main Attachment"
+msgstr ""
+
+#. module: utilities
+#: model:ir.model.fields.selection,name:utilities.selection__utilities_approval_flow__approval_flow_type__maintenance-scope-report-approval-flow
+msgid "Maintenance scope report approval flow"
+msgstr "Luồng duyệt báo cáo hạng mục sửa chữa"
+
+#. module: utilities
+#: model:res.groups,name:utilities.group_ship_material_expert
+msgid "Material Expert"
+msgstr "Chuyên viên vật tư"
+
+#. module: utilities
+#: model:ir.model.fields.selection,name:utilities.selection__utilities_approval_flow__approval_flow_type__material-quote-approval-flow
+msgid "Material/Paint quote approval flow"
+msgstr "Luồng duyệt báo giá vật tư"
+
+#. module: utilities
+#: model:ir.model.fields,field_description:utilities.field_utilities_approval_flow__message_has_error
+#: model:ir.model.fields,field_description:utilities.field_utilities_approval_level__message_has_error
+#: model:ir.model.fields,field_description:utilities.field_utilities_approval_status__message_has_error
+#: model:ir.model.fields,field_description:utilities.field_utilities_default_value__message_has_error
+#: model:ir.model.fields,field_description:utilities.field_utilities_notification__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: utilities
+#: model:ir.model.fields,field_description:utilities.field_utilities_approval_flow__message_ids
+#: model:ir.model.fields,field_description:utilities.field_utilities_approval_level__message_ids
+#: model:ir.model.fields,field_description:utilities.field_utilities_approval_status__message_ids
+#: model:ir.model.fields,field_description:utilities.field_utilities_default_value__message_ids
+#: model:ir.model.fields,field_description:utilities.field_utilities_notification__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: utilities
+#: model:ir.model.fields,field_description:utilities.field_utilities_default_value__model
+msgid "Model"
+msgstr ""
+
+#. module: utilities
+#: model:ir.model.fields,field_description:utilities.field_utilities_approval_flow__name
+#: model:ir.model.fields,field_description:utilities.field_utilities_approval_level__name
+msgid "Name"
+msgstr "Tên"
+
+#. module: utilities
+#: model:ir.model.fields,field_description:utilities.field_utilities_approval_status__name_for_noti
+msgid "Name for noti"
+msgstr ""
+
+#. module: utilities
+#. odoo-python
+#: code:addons/utilities/models/approval_status.py:0
+#: code:addons/utilities/models/default_value.py:0
+#: code:addons/utilities/models/default_value.py:0
+#, python-format
+msgid "New"
+msgstr ""
+
+#. module: utilities
+#: model:ir.model,name:utilities.model_utilities_notification
+msgid "Notification records"
+msgstr ""
+
+#. module: utilities
+#: model:ir.model.fields,field_description:utilities.field_utilities_approval_status__notification_run
+msgid "Notification run"
+msgstr ""
+
+#. module: utilities
+#: model:ir.model.fields,field_description:utilities.field_utilities_approval_flow__message_needaction_counter
+#: model:ir.model.fields,field_description:utilities.field_utilities_approval_level__message_needaction_counter
+#: model:ir.model.fields,field_description:utilities.field_utilities_approval_status__message_needaction_counter
+#: model:ir.model.fields,field_description:utilities.field_utilities_default_value__message_needaction_counter
+#: model:ir.model.fields,field_description:utilities.field_utilities_notification__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: utilities
+#: model:ir.model.fields,field_description:utilities.field_utilities_approval_flow__message_has_error_counter
+#: model:ir.model.fields,field_description:utilities.field_utilities_approval_level__message_has_error_counter
+#: model:ir.model.fields,field_description:utilities.field_utilities_approval_status__message_has_error_counter
+#: model:ir.model.fields,field_description:utilities.field_utilities_default_value__message_has_error_counter
+#: model:ir.model.fields,field_description:utilities.field_utilities_notification__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: utilities
+#: model:ir.model.fields,help:utilities.field_utilities_approval_flow__message_needaction_counter
+#: model:ir.model.fields,help:utilities.field_utilities_approval_level__message_needaction_counter
+#: model:ir.model.fields,help:utilities.field_utilities_approval_status__message_needaction_counter
+#: model:ir.model.fields,help:utilities.field_utilities_default_value__message_needaction_counter
+#: model:ir.model.fields,help:utilities.field_utilities_notification__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr ""
+
+#. module: utilities
+#: model:ir.model.fields,help:utilities.field_utilities_approval_flow__message_has_error_counter
+#: model:ir.model.fields,help:utilities.field_utilities_approval_level__message_has_error_counter
+#: model:ir.model.fields,help:utilities.field_utilities_approval_status__message_has_error_counter
+#: model:ir.model.fields,help:utilities.field_utilities_default_value__message_has_error_counter
+#: model:ir.model.fields,help:utilities.field_utilities_notification__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: utilities
+#: model:ir.ui.menu,name:utilities.menu_utilities_operations
+msgid "Operation"
+msgstr "Vận hành"
+
+#. module: utilities
+#: model:ir.model.fields,field_description:utilities.field_utilities_approval_level_ordering__ordering
+msgid "Ordering"
+msgstr ""
+
+#. module: utilities
+#: model:res.groups,name:utilities.group_ship_pa
+msgid "PA(Perform All)"
+msgstr "Thực thi tất cả"
+
+#. module: utilities
+#: model:ir.model.fields.selection,name:utilities.selection__ship_proposed_liquidation__approval_status__pending
+#: model:ir.model.fields.selection,name:utilities.selection__utilities_approval_status__approval_status__pending
+msgid "Pending"
+msgstr "Chờ duyệt"
+
+#. module: utilities
+#: model:ir.module.category,description:utilities.module_ship_power_level
+msgid "Power Level For Ship"
+msgstr ""
+
+#. module: utilities
+#: model:ir.model.fields.selection,name:utilities.selection__utilities_approval_flow__approval_flow_type__proposed-liquidation-flow
+msgid "Proposed liquidation approval flow"
+msgstr "Luồng duyệt đề nghị thanh lý"
+
+#. module: utilities
+#: model:ir.model.fields.selection,name:utilities.selection__ship_proposed_liquidation__approval_status__rejected
+#: model:ir.model.fields.selection,name:utilities.selection__utilities_approval_status__approval_status__rejected
+msgid "Rejected"
+msgstr "Đã từ chối"
+
+#. module: utilities
+#: model:ir.model.fields,field_description:utilities.field_utilities_approval_level__second_time
+msgid "Second time"
+msgstr "Sẽ xãy ra lần thứ 2(trong luồng duyệt)"
+
+#. module: utilities
+#: model:res.groups,name:utilities.group_ship_ship_crew
+msgid "Ship Crew"
+msgstr "Thuyền viên"
+
+#. module: utilities
+#: model:ir.module.category,name:utilities.module_ship_power_level
+msgid "Ship Power Levels"
+msgstr ""
+
+#. module: utilities
+#: model:ir.module.category,name:utilities.module_category_ship
+msgid "Ship Roles"
+msgstr ""
+
+#. module: utilities
+#: model:ir.ui.menu,name:utilities.menu_utilities_root
+msgid "Ship common utilities"
+msgstr ""
+
+#. module: utilities
+#: model:res.groups,name:utilities.group_ship_supplier
+msgid "Supplier"
+msgstr "Nhà cung cấp"
+
+#. module: utilities
+#: model:ir.model.fields.selection,name:utilities.selection__utilities_approval_flow__approval_flow_type__survey-approval-flow
+msgid "Survey approval flow"
+msgstr "Luồng duyệt khảo sát"
+
+#. module: utilities
+#: model:res.groups,name:utilities.group_ship_technical_expert
+msgid "Technical Expert"
+msgstr "Chuyên viên kỹ thuật"
+
+#. module: utilities
+#: model:ir.model.fields.selection,name:utilities.selection__utilities_default_value__default_type__user_for_notification
+msgid "User For Notification"
+msgstr ""
+
+#. module: utilities
+#: model:ir.model.fields,field_description:utilities.field_utilities_approval_level__user_group
+msgid "User Group"
+msgstr ""
+
+#. module: utilities
+#: model:ir.model.fields,field_description:utilities.field_utilities_default_value__user_ids
+#: model_terms:ir.ui.view,arch_db:utilities.view_utilities_default_value_form
+msgid "Users"
+msgstr ""
+
+#. module: utilities
+#: model:res.groups,name:utilities.group_ship_vice_captain
+msgid "Vice Captain"
+msgstr "Đại phó"
+
+#. module: utilities
+#: model:res.groups,name:utilities.group_ship_vice_captain_head_machinery
+msgid "Vice Captain And Head Machinery"
+msgstr "Đại phó & Máy Trưởng"
+
+#. module: utilities
+#. odoo-python
+#: code:addons/utilities/models/approval_status.py:0
+#: code:addons/utilities/models/approval_status.py:0
+#: code:addons/utilities/models/approval_status.py:0
+#, python-format
+msgid ""
+"You are not allowed to perform this action. Please contact your "
+"administrator!"
+msgstr ""
+
+#. module: utilities
+#: model:ir.model.constraint,message:utilities.constraint_utilities_default_value_unique_default_type_and_model
+msgid "default_type, model must be unique."
+msgstr ""
+
+#. module: utilities
+#: model:ir.model.fields,field_description:utilities.field_utilities_approval_level__group_xml_id
+msgid "group_xml_id"
+msgstr ""

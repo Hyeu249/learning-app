@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_legis_serious_accident_task_form" model="ir.ui.view">
+        <field name="name">legis.serious.accident.task.form</field>
+        <field name="model">legis.serious.accident.task</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="ref" readonly="1"/>
+                        </h1>
+                    </div>
+
+                    <group>
+                        <field name="company_id" readonly="1"/>
+                        <field name="name"/>
+                        <field name="description"/>
+                        <field name="ert_task_id"/>
+                    </group>
+
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids"/>
+                        <field name="message_ids" options="{'post_refresh': 'recipients'}"/>
+                    </div>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_legis_serious_accident_task_tree" model="ir.ui.view">
+        <field name="name">legis.serious.accident.task.tree</field>
+        <field name="model">legis.serious.accident.task</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="ref"/>
+                <field name="name"/>
+                <field name="description"/>
+                <field name="ert_task_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_legis_serious_accident_task_search" model="ir.ui.view">
+        <field name="name">legis.serious.accident.task.search</field>
+        <field name="model">legis.serious.accident.task</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="ref"/>
+                <field name="name"/>
+                <field name="description"/>
+                <field name="ert_task_id"/>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_legis_serious_accident_task" model="ir.actions.act_window">
+        <field name="name">Serious Accident Task</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">legis.serious.accident.task</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="menu_legis_serious_accident_task"
+            name="Serious Accident Task" 
+            parent="menu_legis_serious_accidents"
+            action="action_legis_serious_accident_task"
+            sequence="10"/>
+
+</odoo>

@@ -1,0 +1,50 @@
+.sidebar-button {
+    display: block;
+    background-color: #ffffff;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    border: 2px solid rgb(188, 194, 207);
+}
+
+.sidebar-button:hover {
+    box-shadow: rgb(188, 194, 207) 0px 4px 0px;
+}
+
+/* .sidebar-button:active {
+    box-shadow: rgb(188, 194, 207) 0px 4px 0px;
+} */
+
+.success{
+    background-color: #d1ffc9;
+    border: 2px solid #6cff70;
+    box-shadow: #8bff7c 0px 4px 0px !important;
+}
+
+.danger{
+    background-color: #ffb3b3;
+    border: 2px solid red;
+    box-shadow: #ff6161 0px 4px 0px !important;
+}
+
+.progress-container {
+    width: 100%;
+    height: 20px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px auto; /* Center horizontally */
+}
+
+.progress-bar {
+    height: 20px;
+    width: 0;
+    background-color: #76c7c0;
+    border-radius: 10px;
+    transition: width 0.5s ease-in-out;
+}
