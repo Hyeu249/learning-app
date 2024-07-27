@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_lang_app_completed_vocabulary_form" model="ir.ui.view">
+        <field name="name">lang.app.completed.vocabulary.form</field>
+        <field name="model">lang.app.completed.vocabulary</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="name" readonly="1"/>
+                        </h1>
+                    </div>
+
+                    <group string="Meta">
+                        <field name="name"/>
+                        <field name="is_completed"/>
+                        <field name="user_id"/>
+                        <field name="vocabulary_id"/>
+                    </group>
+
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids"/>
+                        <field name="message_ids" options="{'post_refresh': 'recipients'}"/>
+                    </div>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_lang_app_completed_vocabulary_tree" model="ir.ui.view">
+        <field name="name">lang.app.completed.vocabulary.tree</field>
+        <field name="model">lang.app.completed.vocabulary</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="is_completed"/>
+                <field name="user_id"/>
+                <field name="vocabulary_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_lang_app_completed_vocabulary_search" model="ir.ui.view">
+        <field name="name">lang.app.completed.vocabulary.search</field>
+        <field name="model">lang.app.completed.vocabulary</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="ref"/>
+                <field name="name"/>
+                <field name="is_completed"/>
+                <field name="user_id"/>
+                <field name="vocabulary_id"/>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_lang_app_completed_vocabulary" model="ir.actions.act_window">
+        <field name="name">Completed Vocabulary</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">lang.app.completed.vocabulary</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="menu_lang_app_completed_vocabulary"
+            name="Completed Vocabulary" 
+            parent="menu_operations"
+            action="action_lang_app_completed_vocabulary"
+            sequence="10"/>
+
+</odoo>

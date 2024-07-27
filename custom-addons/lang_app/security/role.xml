@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="lang_app_group_category" model="ir.module.category">
+        <field name="name">Learning app groups</field>
+        <field name="description">Learning app groups</field>
+    </record>
+
+    <record id="group_lang_app_admin" model="res.groups">
+        <field name="name">Admin</field>
+        <field name="category_id" ref="lang_app_group_category"/>
+    </record>
+
+    <record id="group_lang_app_student" model="res.groups">
+        <field name="name">Student</field>
+        <field name="category_id" ref="lang_app_group_category"/>
+    </record>
+
+</odoo>

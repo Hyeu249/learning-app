@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+
+lang_app.access_lang_app_learning_for_user,access_lang_app_learning_for_user,lang_app.model_lang_app_learning,base.group_user,1,1,1,1
+lang_app.access_lang_app_vocabulary_for_user,access_lang_app_vocabulary_for_user,lang_app.model_lang_app_vocabulary,base.group_user,1,1,1,1
+lang_app.access_lang_app_completed_vocabulary_for_user,access_lang_app_completed_vocabulary_for_user,lang_app.model_lang_app_completed_vocabulary,base.group_user,1,1,1,1
+lang_app.access_lang_app_topic_for_user,access_lang_app_topic_for_user,lang_app.model_lang_app_topic,base.group_user,1,1,1,1

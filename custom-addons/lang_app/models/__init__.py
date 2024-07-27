@@ -1,2 +1,2 @@
-from . import index
 from . import CONST
+from . import index

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates>
+
+    <t t-name="LearningAppHome" owl="1">
+        <div id="lang_app_home" style="display: flex; flex-direction: column;">
+            <Header/>
+            <Body/>
+        </div>
+    </t>
+
+    <t t-name="Header" owl="1">
+        <div id="lang_app_header" style="height: 50px; background-color: orange;">
+        Header
+        </div>
+    </t>
+
+    <t t-name="Body" owl="1">
+        <div id="lang_app_body" style="flex: 1; background-color: red;">
+            <div class="font-monospace pt8 bg-light" style="height: 100vh; display: flex;">
+
+                <div class="sidebar">
+                    <button class="sidebar-button" t-on-click="openDashboard">Trang chủ</button>
+                    <button class="sidebar-button" t-on-click="openSettings">Tình huống</button>
+                    <button class="sidebar-button" t-on-click="openProfile">Video</button>
+                </div>
+
+                <div class="content">
+                    <div class="header">
+                        <div class="course-title">Tiếng Anh (Anh Quốc) - Cấp độ</div>
+                        <div class="level">1</div>
+                    </div>
+
+                    <div class="progress-bar">
+                        <div class="progress-bar-inner"></div>
+                    </div>
+
+                    <div class="score-section">
+                        <div class="title">Điểm của tôi</div>
+                        <div class="score">0 đ</div>
+                    </div>
+
+                    <div class="container score-category">
+                        <div style="" t-on-click="(e)=> this.changeBackgroundColorAndMoveSlide(e, 3)">
+                            <div class="category-title">Học từ mới</div>
+                            <div class="category-score" style="">0 đ</div>
+                            <div style="">Các từ đã thành thạo</div>
+                            <div>Đã bắt đầu học</div>
+                        </div>
+                        <div style="background-color: rgb(223, 230, 233);" t-on-click="(e)=> this.changeBackgroundColorAndMoveSlide(e, 1)">
+                            <div class="category-title">Nghe các từ đã học</div>
+                            <div class="category-score" style="">0 đ</div>
+                            <div style="">Video mới đã xem</div>
+                            <div>Đã xem lại</div>
+                        </div>
+                        <div style="" t-on-click="(e)=> this.changeBackgroundColorAndMoveSlide(e, 2)">
+                            <div class="category-title">Dùng các từ đã học</div>
+                            <div class="category-score" style="">0 đ</div>
+                            <div style="">Đối thoại đã hoàn thành</div>
+                            <div>Đã xem lại</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel">
+                    <div class="carousel-images" style="transform: translateX(-200%);">
+                        <div style="background: red;">hello1</div>
+                        <div style="background: green;">hello2</div>
+                        <div style="background: blue;">hello3</div>
+                    </div>
+                    <button class="prev" t-on-click="(e)=> this.moveSlide(-1)">❮</button>
+                    <button class="next" t-on-click="(e)=> this.moveSlide(1)">❯</button>
+                </div>
+            </div>
+        </div>
+    </t>
+
+
+</templates>

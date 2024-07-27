@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="action_lang_app_home" model="ir.actions.client">
+        <field name="name">Home</field>
+        <field name="tag">action_lang_app</field>
+        <field name="target">main</field>
+    </record>
+
+    <menuitem id="menu_lang_app" name="Language app" sequence="10">
+        <menuitem id="menu_operations" name="Operation" sequence="10"/>
+        <menuitem id="menu_home" name="Home" action="action_lang_app_home" sequence="20"/>
+    </menuitem>
+
+</odoo>

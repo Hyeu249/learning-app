@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record model="ir.rule" id="lang_app_learning_multi_company_rule">
+        <field name="name">Language App Test Multi Company Rule</field>
+        <field name="model_id" ref="model_lang_app_learning"/>
+        <field name="domain_force">['|', ('company_id', '=', False), ('company_id', 'child_of', company_ids)]</field>
+    </record>
+
+    <record model="ir.rule" id="lang_app_vocabulary_multi_company_rule">
+        <field name="name">Language App Vocabulary Multi Company Rule</field>
+        <field name="model_id" ref="model_lang_app_vocabulary"/>
+        <field name="domain_force">['|', ('company_id', '=', False), ('company_id', 'child_of', company_ids)]</field>
+    </record>
+
+    <record model="ir.rule" id="lang_app_completed_vocabulary_multi_company_rule">
+        <field name="name">Language App Vocabulary Complete Multi Company Rule</field>
+        <field name="model_id" ref="model_lang_app_completed_vocabulary"/>
+        <field name="domain_force">['|', ('company_id', '=', False), ('company_id', 'child_of', company_ids)]</field>
+    </record>
+
+    <record model="ir.rule" id="lang_app_topic_multi_company_rule">
+        <field name="name">Language App Topic Multi Company Rule</field>
+        <field name="model_id" ref="model_lang_app_topic"/>
+        <field name="domain_force">['|', ('company_id', '=', False), ('company_id', 'child_of', company_ids)]</field>
+    </record>
+
+</odoo>

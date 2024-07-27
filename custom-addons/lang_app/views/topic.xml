@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_lang_app_topic_form" model="ir.ui.view">
+        <field name="name">lang.app.topic.form</field>
+        <field name="model">lang.app.topic</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="name" readonly="1"/>
+                        </h1>
+                    </div>
+
+                    <group string="Meta">
+                        <field name="name"/>
+                        <field name="description"/>
+                    </group>
+
+                    <notebook>
+                        <page string="Learnings" name="learning_ids">
+                            <field name="learning_ids"/>
+                        </page>
+                    </notebook>
+
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids"/>
+                        <field name="message_ids" options="{'post_refresh': 'recipients'}"/>
+                    </div>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_lang_app_topic_tree" model="ir.ui.view">
+        <field name="name">lang.app.topic.tree</field>
+        <field name="model">lang.app.topic</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="description"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_lang_app_topic_search" model="ir.ui.view">
+        <field name="name">lang.app.topic.search</field>
+        <field name="model">lang.app.topic</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="ref"/>
+                <field name="name"/>
+                <field name="description"/>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_lang_app_topic" model="ir.actions.act_window">
+        <field name="name">Topic</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">lang.app.topic</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="menu_lang_app_topic"
+            name="Topic" 
+            parent="menu_operations"
+            action="action_lang_app_topic"
+            sequence="10"/>
+
+</odoo>

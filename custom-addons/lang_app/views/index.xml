@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_lang_app_learning_form" model="ir.ui.view">
+        <field name="name">lang.app.learning.form</field>
+        <field name="model">lang.app.learning</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button name="refresh_is_completed"
+                            string="Refresh is completed"
+                            type="object"
+                            class="oe_highlight"/>
+                </header>
+                <sheet>
+                    <field name="progress" widget="custom_progressbar" style="width: 100%"/>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="vocabulary_name" readonly="1"/>
+                        </h1>
+                    </div>
+
+                    <div style="font-size: 21px">Choose the answer that matches what’s in the audio</div>
+                    <group>
+                      <group>
+                          <field name="audio_url" string="" widget="audio_player"/>
+                      </group>
+                      <group>
+                          <field name="continue_button" string="" widget="continue_button"/>
+                      </group>
+                    </group>
+
+                    <field name="answer_number_1" string="" widget="answer_button" context="{'whatsup': 'whats up man'}"/>
+                    <field name="answer_number_2" string="" widget="answer_button" context="{'whatsup': 'whats up man'}"/>
+                    <field name="answer_number_3" string="" widget="answer_button" context="{'whatsup': 'whats up man'}"/>
+                    <field name="answer_number_4" string="" widget="answer_button" context="{'whatsup': 'whats up man'}"/>
+
+                    <field name="vocabulary_id" invisible="1"/>
+                    <field name="vocabulary_ids" invisible="1"/>
+                    <field name="translate_version" invisible="1"/>
+                    <notebook groups="lang_app.group_lang_app_admin">
+                        <page string="Info" name="info">
+                            <group string="Vocabulary">
+                                <field name="name"/>
+                                <field name="description"/>
+                                <field name="vocabulary_id"/>
+                                <field name="topic_id"/>
+                            </group>
+                            <group string="Meta">
+                                <field name="progress"/>
+                                <field name="translate_version"/>
+                                <field name="random_correct_answer"/>
+                            </group>
+                        </page>
+
+                        <page string="Vocabularies" name="vocabulary_ids">
+                            <field name="vocabulary_ids"/>
+                        </page>
+                    </notebook>
+
+                    <div class="oe_chatter" groups="lang_app.group_lang_app_admin">
+                        <field name="message_follower_ids"/>
+                        <field name="message_ids" options="{'post_refresh': 'recipients'}"/>
+                    </div>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_lang_app_learning_tree" model="ir.ui.view">
+        <field name="name">lang.app.learning.tree</field>
+        <field name="model">lang.app.learning</field>
+        <field name="arch" type="xml">
+            <tree delete="0">
+                <header>
+                    <button name="refresh_is_completed"
+                            string="Refresh is completed"
+                            type="object"
+                            class="oe_highlight"/>
+                </header>
+                <field name="name"/>
+                <field name="description"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_lang_app_learning_search" model="ir.ui.view">
+        <field name="name">lang.app.learning.search</field>
+        <field name="model">lang.app.learning</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="ref"/>
+                <field name="name"/>
+                <field name="description"/>
+
+                <searchpanel>
+                    <field name="topic_id" icon="fa-users" enable_counters="1"/>
+                </searchpanel>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_lang_app_learning" model="ir.actions.act_window">
+        <field name="name">Learning</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">lang.app.learning</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="menu_lang_app_learning"
+            name="Learning" 
+            parent="menu_operations"
+            action="action_lang_app_learning"
+            sequence="10"/>
+
+</odoo>
